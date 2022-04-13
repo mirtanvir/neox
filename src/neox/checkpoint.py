@@ -21,6 +21,7 @@ from labml.utils.download import download_file
 CHECKPOINTS_URL = 'https://mystic.the-eye.eu/public/AI/models/GPT-NeoX-20B/slim_weights/'
 # Download path
 CHECKPOINTS_DOWNLOAD_PATH = '{}/{}/{}'.format(lab.get_data_path(), 'neox', 'slim_weights')
+CHECKPOINTS_DOWNLOAD_PATH = lab.get_data_path() / 'neox' / 'slim_weights'
 
 
 def get_files_to_download():
